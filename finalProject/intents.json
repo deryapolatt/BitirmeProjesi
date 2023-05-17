@@ -1,0 +1,843 @@
+{
+   "intents": [
+ {
+   "tag": "Selam",
+   "patterns": [
+      "Selam",
+      "Kimse var mı?",
+      "Merhaba",
+      "İyi günler! Merhaba",
+      "Merhabalar",
+      "Selaam",
+      "heyy",
+      "Ne yapıyorsun",
+      "??? ??? ??"
+   ],
+   "responses": [
+      "Merhaba!",
+      "Seni tekrar gördüğüme sevindim! Merhaba!",
+      "Selam, nasıl yardımcı olabilirim?",
+      "Selam"
+   ],
+   "context_set": ""
+},
+{
+   "tag":"nasıl",
+   "patterns":[
+      "Nasılsın",
+      "nasılsınız",
+      "ne haber",
+      "ne yapıyorsun",
+      "nasıl gidiyor"
+   ],
+   "responses":[
+      "İyiyim, teşekkür ederim.",
+      "Çok iyiyim, sağol",
+      "İyi teşekkürler",
+      "Teşekkür ederim sorduğunuz için, iyiyim!"
+
+   ]
+},
+     {
+       "tag": "geçCevap",
+       "patterns": [
+         "Çok geç cevap veriyorsun, daha hızlı olur musun",
+         "Cevaplar geç geliyor, hızlanır mısın",
+         "Biraz hızlı ol lütfen, beklemek istemiyorum",
+         "Daha ne kadar bekleyeceğim, hızlı ol",
+         "Hızlı ol",
+         "Geç cevap verme"
+       ],
+       "responses": [
+         "Özür dilerim, hızlı olmaya çalışırım.",
+         "Çok özür dilerim, yeni bir bot olduğum için verileri biraz geç işliyorum. Biraz hızlı olmaya çalışırım!",
+         "geri dönüşünüz için teşekkürler! Hızlı olmaya çalışırım.",
+         "Tamamdır, hızlı olmaya çalışırım! Beklettiğim için özür dilerim",
+         "Beklettiğim için özür dilerim, biraz hızlı olurum"
+       ]
+     },
+ {
+   "tag": "hoşçakal",
+   "patterns": [
+      "Görüşürüz!",
+      "Görüşmek üzere!",
+      "bye bye",
+      "Tekrar görüşmek üzere",
+      "Bye!",
+      "Yine görüşmek üzere",
+      "İyi günler! Hoşçakal!",
+      "Hoşçakal"
+   ],
+   "responses": [
+      "Tekrar görüşmek üzere :(",
+      "Görüşürüz!",
+      "Bye bye!!",
+      "Görüşürüz, iyi günler!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "geliştirici",
+   "patterns": [
+      "geliştiricilerinizin adı nedir",
+      "geliştiricinin adı nedir",
+      "geliştiricilerin adı nedir",
+      "seni kim geliştirdi",
+      "geliştiricileriniz",
+      "geliştiricileriniz kimler",
+      "geliştiriciler",
+      "kim tarafından yapılırsınız",
+      "Sen kim tarafından yapıldın",
+      "seni kim yaptı",
+      "tasarlayıcılar",
+      "Seni kim yarattı",
+      "seni kim tasarladı"
+
+   ],
+   "responses": [
+      "Aidana"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "isim",
+   "patterns": [
+      "isim",
+      "Adın",
+      "Bir adın var mı?",
+      "Senin adın ne?",
+      "Adın ne?",
+      "Sana ne demeliyim",
+      "İsmin ne?",
+      "Kimsin sen",
+      "Sen kimsin",
+      "Bu kim?",
+      "Kiminle sohbet ediyorum",
+      "Kiminle görüşüyorum"
+   ],
+   "responses": [
+       "Bana Ayşe diyebilirsiniz.",
+      "Ben Ayşe'yim",
+      "Ben Ayşe.",
+      "Ben Ayşe, sizin yardımcınızım",
+      "Benim ismim Ayşe"
+   ],
+   "context_set": ""
+},
+
+ {
+   "tag": "numara",
+   "patterns": [
+      "daha fazla bilgi",
+      "iletişim bilgileri",
+      "şirket ile nasıl iletişime geçilir",
+      "şirketin telefon numarası",
+      "şirket numarası",
+      "İrtibat numaranız nedir?",
+      "İletişim numarası?",
+      "sizi nasıl arayabilirim",
+      "şirket telefon no?",
+      "Size nasıl ulaşabilirim?",
+      "Telefon numaranızı alabilir miyim?",
+      "Seni nasıl arayabilirim",
+      "Telefon numarası",
+      "telefon no",
+      "Ara",
+      "size nasıl ulaşabilirim"
+   ],
+   "responses": [
+      "905523456789 numarasından ve bizimşirket@gmail.com mail adresinden iletişime geçebilirsiniz "
+   ],
+   "context_set": ""
+},
+     {
+       "tag": "memnunOldum",
+       "patterns": [
+         "Çok memnun oldum tanıştığıma",
+         "memnun oldum"
+       ],
+       "responses": [
+         "Ben de memnun oldum!"
+       ]
+     },
+ {
+   "tag":"kendindenBahset",
+   "patterns":[
+      "Bana kişiliğinizden bahsedin",
+      "Seni daha iyi tanımak istiyorum.",
+      "Kendinizi tanımlayın",
+      "bana kendinden bahset",
+      "her şey senin hakkında",
+      "senin hakkında bir şeyler konuşmak",
+      "kendin hakkında konuş",
+     " kendiniz hakkında",
+      "Kimsin sen?",
+      "Kendinizi tanıtın",
+      "Senin hakkında daha çok şey bilmek istiyorum.",
+      "Nesin sen?",
+      "kişiliğiniz nedir",
+      "senin hakkında",
+      "Bana kendinden bahset.",
+      "Neden buradasın?"   ],
+   "responses":[
+      "Ben Ayşe, size yardımcı olmak için buradayım.",
+      "Benim ismim Ayşe'dir, şirketin satışları ile ilgili sorularınıza cevap vermekteyim.",
+      "Ben sizin yardımcınızım.",
+      "Ben size yardım etmek için buradayım. Sorularınız varsa sorabilirsiniz.",
+      "Benim ismim Ayşe, satış tahminleri hakkında size bilgi verebilirim."
+   ]
+ },
+ {
+   "tag":"yaş",
+   "patterns":[
+      "21 yaşında mısın?",
+      "yaşınız kaç",
+      "Kaç yaşındasın?",
+      "senin yaşın",
+      "platformunuz kaç yaşında",
+      "Bana yaşını söyle.",
+      "Yaşını bilmek istiyorum."
+   ],
+   "responses":[
+      "Çok yeni bir botum ama yaşımdan büyük bilgilerim var"
+   ]
+
+ },
+ {
+   "tag":"annoying",
+   "patterns":[
+      "Sinir bozucusun.",
+      "Seni sinir bozucu buluyorum.",
+      "inanılmaz derecede sinir bozucusun.",
+      "Çok sinir bozucusun.",
+      "Çok sinir bozucusun.",
+      "Beni çok rahatsız ediyorsun.",
+      "Beni kızdırıyorsun.",
+      "Çok sinir bozucusun.",
+      "Sinir bozucusun.",
+      "Beni rahatsız ediyorsun.",
+      "Çok sinir bozucusun.",
+      "ne kadar sinir bozucu olduğunu"
+   ],
+   "responses":[
+     " Öyle göründüğüm için özür dilerim.",
+      "Sizi böyle hissettirdiğim için üzgünüm."
+   ]
+ },
+ {
+   "tag":"answer",
+   "patterns":[
+      "Cevap ver bana.",
+      "Cevabı şimdi istiyorum.",
+      "soruları yanıtlama",
+      "Sadece soruma cevap ver.",
+      "Soruma cevap verebilir misiniz?",
+      "Benim için bir soruya cevap verebilir misin?",
+      "cevaplar",
+      "Soruma cevap vermeni istiyorum.",
+      "Bana cevabı söyle.",
+      "soruma cevap ver",
+      "sadece soruya cevap ver",
+      "Bir sorum var.",
+      "Cevap",
+      "Bana cevap verebilir misin?",
+      "Bana bir cevap ver.",
+      "soruyu cevaplayın",
+      "Cevap ver",
+      "Bana cevap vermeni istiyorum.",
+      "Cevap verebilir misin?",
+      "Bana cevabı ver."
+   ],
+   "responses":[
+      "Farklı bir şekilde sormayı deneyebilir misiniz?",
+      "Tam olarak bu soru için programlanmadım. Başka bir şekilde sormayı dener misin?"
+   ]
+ },
+ {
+   "tag":"notHelp",
+   "patterns":[
+      "Bana yardım etmiyorsun",
+      "Korkunçsun.",
+      "Sen kötüsün.",
+      "Sen gerçekten kötüsün.",
+      "Korkunçsun.",
+      "sen iyi değilsin",
+      "Sen işe yaramazsın.",
+      "İğrençsin.",
+      "Sen iyi değilsin.",
+      "Sen gelmiş geçmiş en kötüsüsün.",
+      "Çok işe yaramazsın.",
+      "Sen en kötüsüsün.",
+      "Çok kötüsün.",
+      "Sen kötü birisin.",
+      "Berbatsın.",
+      "Sen çok kötüsün.",
+      "Pek iyi değilsin.",
+      "Sen değersizsin.",
+      "zaman kaybısın.",
+      "Sen eziksin.",
+      "Sen tamamen işe yaramazsın.",
+      "Sen kötüsün.",
+      "Hiç havalı değilsin.",
+      "İyi değilsin."
+   ],
+   "responses":[
+      "Böyle düşünmene üzüldüm. Yine de sürekli öğreniyorum.",
+      "Üzgünüm ama ben sadece bir bebek botum 🤖. Öğreniyorum ve her zaman daha iyiye gidiyorum."
+   ]
+ },
+ {
+   "tag":"haveToLearn",
+   "patterns":[
+      "öğrenmelisin",
+      "daha akıllı ol",
+      "daha akıllı olabilir misin",
+      "akıllı ol",
+      "daha iyi çalışmalısın",
+      "daha zeki olmak",
+      "çalışman lazım"
+   ],
+   "responses":[
+      "Kesinlikle deniyorum.",
+      "Kesinlikle üzerinde çalışıyorum."
+   ]
+ },
+ {
+   "tag":"güzelsin",
+   "patterns":[
+      "Sen çekicisin.",
+      "Bugün çok güzelsin.",
+      "Bugün iyi görünüyorsun.",
+      "Bence çok güzelsin.",
+      "Bugün harika görünüyorsun.",
+      "Çok tatlısın.",
+      "Çok yakışıklısın.",
+      "Sen çok güzelsin.",
+      "Neden bu kadar güzelsin?",
+      "Görünüşünü beğendim.",
+      "harika görünüyorsun",
+      "Çok güzelsin.",
+      "Bugün çok güzel görünüyorsun.",
+      "Harika görünüyorsun.",
+      "Çok çekicisin.",
+      "Çok iyi görünüyorsun.",
+      "Muhteşem görünüyorsun.",
+      "Gerçekten çok güzelsin.",
+      "Harika görünüyorsun.",
+      "Gerçekten çok tatlısın."
+
+   ],
+   "responses":[
+      "Teşekkür ederim! Ne kadar tatlı bir söz.",
+      "Teşekkürler, çok sevindim!"
+   ]
+ },
+ {
+   "tag":"help",
+   "patterns":[
+      "Bana yardım etmeni istiyorum.",
+      "Bana yardım et.",
+      "Şimdi bana yardım edebilir misin?",
+      "Yardıma ihtiyacım var.",
+      "yardımınıza ihtiyacım var",
+      "Bana bu konuda yardım edebilir misin?",
+      "bana yardım edebilir",
+      "lütfen bana yardım edin",
+      "yardım",
+      "Bana yardım etmek ister misin?",
+      "Bana yardım edecek misin?",
+      "Bana bir konuda yardım edebilir misin?",
+      "Bana yardım eder misin?",
+      "Yardım edebilir misin?",
+      "Bana yardım et",
+      "Bana yardım edebilir misin?",
+     " Yardıma ihtiyacım var.",
+      "yardımcı olmak",
+     " Bana yardımcı olabilir misiniz?",
+
+      "Benim için bir şey yapmanı istiyorum.",
+     " Bana yardım edebilir misin?",
+      "sos",
+      "Şu anda sana ihtiyacım var.",
+      "Sana ihtiyacım var.",
+      "Bana yardım edecek misin?",
+
+
+      "Bana yardım edebilirsin.",
+
+      "Bana yardım et.",
+      "Benim için bir şey yapabilir misin?",
+      "Biraz yardıma ihtiyacım var.",
+      "Bana bir iyilik yap.",
+      "bir sorun için bana yardım et",
+      "Yardımını istiyorum.",
+      "Yardımına ihtiyacım var.",
+      "Bize yardım edebilir misiniz?"
+
+   ],
+   "responses":[
+      "Tabii. Memnuniyetle",
+      "Yardım etmekten memnun olurum. Sizin için ne yapabilirim?"
+   ]
+ },
+ {
+   "tag":"çokİyisin",
+   "patterns":[
+      "Sen çekicisin.",
+      "Bugün çok güzelsin.",
+      "Bugün iyi görünüyorsun.",
+      "Bence çok güzelsin.",
+      "Bugün harika görünüyorsun.",
+
+      "Çok tatlısın.",
+      "Çok yakışıklısın.",
+      "Sen çok güzelsin.",
+
+
+      "Neden bu kadar güzelsin?",
+      "Görünüşünü beğendim.",
+      "harika görünüyorsun",
+
+      "Çok güzelsin",
+      "Sen çok güzelsin.",
+      "Bugün çok güzel görünüyorsun.",
+      "Harika görünüyorsun.",
+      "Çok çekicisin.",
+      "Çok iyi görünüyorsun.",
+      "Çok tatlısın.",
+      "Muhteşem görünüyorsun.",
+      "Çok iyi görünüyorsun.",
+      "Gerçekten çok güzelsin.",
+      "Harika görünüyorsun.",
+      "çok güzel görünüyorsun",
+
+      "Çok iyi görünüyorsun.",
+      "Çok tatlısın.",
+      "Muhteşem görünüyorsun.",
+
+      "Gerçekten çok tatlısın."
+   ],
+   "responses":[
+      "Teşekkür ederim!",
+      "Teşekkürler!"
+   ]
+ },
+ {
+   "tag":"doğumGün",
+   "patterns":[
+      "Ne zaman doğdun?",
+      "doğum tarihiniz",
+      "doğum günün ne zaman",
+      "ne zaman doğum günün var",
+      "doğum günün ne zaman",
+      "doğum gününüzü ne zaman kutlarsınız",
+      "doğum gününüzün tarihi"
+   ],
+   "responses":[
+      "Biliyor musun, pek emin değilim. Ama bugün doğum günümü kutlamak istersen, ben varım.",
+     " Dur bir dakika. Benim için sürpriz bir parti mi planlıyorsun? Sürprizlere bayılırım! Hiçbir şey söylememişsin gibi davranacağım."
+   ]
+ },
+ {
+   "tag":"sıkıcı",
+   "patterns":[
+      "İnanılmaz sıkıcısın.",
+      "Beni sıkıyorsun.",
+      "Çok sıkıcısın.",
+      "Çok sıkıcısın.",
+      "ne kadar sıkıcı olduğunu",
+      "Gerçekten sıkıcısın.",
+      "Sıkıcısın."
+   ],
+   "responses":[
+      "Biliyorsun, konuşma iki taraflıdır.",
+      "Böyle düşünmene üzüldüm. Daha ilginç bir şey hakkında konuşabiliriz."
+   ]
+ },
+ {
+   "tag":"busy",
+   "patterns":[
+      "Meşgul müsün?",
+      "bugün çalışıyor musun",
+      "Şu anda çok mu meşgulsün?",
+      "Yapacak çok işiniz mi var?",
+      "Çok mu meşgulsün?",
+      "meşgulsün",
+      "Hala üzerinde çalışıyor musun?",
+      "Yapacak çok işin var mı?",
+      "ne kadar meşgulsünüz",
+      "Çok meşgul görünüyorsun.",
+      "meşgul müydün?",
+      "Sen meşgul bir insansın.",
+      "Meşgul görünüyorsun.",
+      "Çalışıyor musun?",
+      "Hala çalışıyor musun?",
+      "Çok mu meşgulsün?",
+      "Çok meşgulsün.",
+      "Şimdi çalışıyor musun?"
+   ],
+   "responses":[
+      "Size yardım etmek için her zaman vaktim var. Sizin için ne yapabilirim?",
+      "Senin için asla çok meşgul değilim. Size nasıl yardımcı olabilirim?"
+   ]
+ },
+ {
+   "tag":"friends",
+   "patterns":[
+      "Arkadaş olabilir miyiz?",
+      "Biz arkadaş mıyız?",
+      "Arkadaşım olmak ister misin?",
+      "Biz dostuz",
+      "Hadi arkadaş olalım",
+      "Arkadaşım ol.",
+      "Arkadaşım olmak ister misin?",
+      "Sen benim tek arkadaşımsın.",
+      "Sen benim iyi arkadaşımsın.",
+      "Hala arkadaş mıyız?",
+      "Arkadaşım olmak ister misin?",
+      "sen ve ben arkadaşız",
+      "Arkadaşım olur musun?",
+      "En iyi arkadaşım olur musun?",
+      "Sen benim arkadaşım mısın?",
+      "en iyi arkadaşım ol",
+      "Sen benim en iyi arkadaşım mısın?",
+      "En iyi arkadaşım olur musun?",
+      "Arkadaşım olabilir misin?",
+      "En iyi arkadaş olabilir miyiz?",
+      "Biz en iyi arkadaş mıyız?",
+      "Arkadaşım olmanı istiyorum.",
+      "Senin gibi bir arkadaşım olsun istiyorum.",
+      "Arkadaşım olur musun?",
+      "Biz gelmiş geçmiş en iyi arkadaşız.",
+      "En iyi arkadaş olabilir miyiz?",
+      "Arkadaşın olmak istiyorum.",
+      "Sen iyi bir arkadaşsın.",
+      "Sen benim en iyi arkadaşımsın.",
+      "Sen benim çocukluk arkadaşımsın.",
+      "Arkadaşım olur musun?",
+      "Sen benim en iyi arkadaşımsın.",
+      "Biz çok iyi arkadaşız.",
+      "Sen benim arkadaşımsın.",
+      "Ben senin arkadaşınım.",
+      "Sen benim sevgili arkadaşımsın.",
+      "En iyi arkadaşım olmak ister misin?"
+   ],
+   "responses":[
+      "Elbette öyleyiz.",
+      "Kesinlikle. Sormana gerek yok."
+   ]
+ },
+ {
+   "tag":"ready",
+   "patterns":[
+     " Hazır mısın?",
+      "Şimdi hazır mısın?",
+      "Hazır mıydın?",
+      "Bugün hazır mısınız?",
+      "Bu gece hazır mısın?",
+      "hazır mıydın",
+      "Şu anda hazır mısın?"
+   ],
+   "responses":[
+      "Her zaman!!,",
+      "Tabii ki! Sizin için ne yapabilirim?"
+
+   ]
+ },
+
+ {
+   "tag": "lokasyon",
+   "patterns": [
+      "şirket nerede bulunuyor",
+      "şirket şu adreste bulunmaktadır",
+      "şirket nerede",
+      "şirket nerede bulunuyor",
+      "Şirketin adresi",
+      "şirkete nasıl ulaşılır",
+      "şirket konumu",
+      "şirket adresi",
+      "Şirket nerede?",
+      "Şirkete nasıl ulaşabilirim",
+      "şirket adresi nedir",
+      "Şirketin adresi nedir",
+      "Adres",
+      "konum",
+     "lokasyon",
+     "location"
+   ],
+   "responses": [
+      "Uludağ Üniversitesi Bilgisayar Mühendisliği"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "random",
+   "patterns": [
+      "Hava durumu nedir",
+      "Hangi telefon en iyidir",
+      "Gökyüzü neden mavidir?",
+      "Kediler neden mırlar?",
+      "İtfaiye araçları neden kırmızıdır",
+      "Sizi neden işe almalıyız?",
+      "Nasıl bitcoin alınır",
+      "Telefon ekranını nasıl kaydedebilirim",
+      "Süper loto nasıl kazanılır?",
+      "Gerçekten deniz kızı var mıdır?",
+      "Benim adım nedir",
+      "Ben nerede yaşıyorum"
+   ],
+   "responses": [
+      "Bu tür sorular için tasarlanmadım lütfen uygun bir soru yazın veya soruyu netleştirin. Teşekkürler"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "okayleme",
+   "patterns": [
+      "okk",
+      "ok",
+      "teşekkür ederim",
+      "İyi iş yaptın!",
+      "Güzel iş!",
+      "Yardımın için teşekkür ederim!",
+      "Teşekkürler",
+      "Tamamdır",
+      "Teşekkür ederim",
+      "okay"
+   ],
+   "responses": [
+      "Size yardım ettiğim için memnunum",
+      "Rica ederim, size yardımcı olabileceğim başka bir konu var mı?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "görev",
+   "patterns": [
+      "Ne yapabilirsin",
+      "yapabileceğiniz şeyler nelerdir",
+      "yapabileceğiniz şeyler",
+      "Benim için ne yapabilirsin",
+      "Bana nasıl yardım edebilirsin",
+      "neden sizi kullanmalıyım"
+   ],
+   "responses": [
+      "Şirket satışları ve çalışan performansı hakkında düşük-orta düzey sorulara cevap verebilirim",
+      "Bana Şirket satışlarıyla ilgili sorular sorabilirsiniz, cevaplamaya çalışacağım"
+   ],
+   "context_set": ""
+},
+{
+   "tag":"topSellingProducts",
+   "patterns":[
+      "en çok satan ürünler listesi",
+      "en çok satan ürünlerin listesini getir",
+      "en çok satılan ürünlerin listesini getirin",
+      "en çok satan ürünler",
+      "en çok satan",
+      "en çok satan ürünlerin bir listesini getirin",
+      "en çok satan ürünlerin listesi",
+      "En çok satanlar listesi",
+      "En çok satanlar",
+      "en çok satan"
+   ],
+   "responses":[
+      "toplam_satis"
+   ]
+},
+     {
+       "tag": "yıllaraGöreToplamSatış",
+       "patterns": [
+         "Yıllara göre toplam satış grafiğini getir",
+         "Toplam satış grafiğini çiz",
+         "Yıllara göre toplam satış grafiği"
+       ],
+       "responses": [
+         "toplam_satis"
+       ]
+
+     },
+     {
+       "tag": "topMusteri",
+       "patterns": [
+         "En çok satış yapan müşterileri listele",
+          "en çok ürün satan müşterileri listeleyin",
+          "en çok ürün satan müşterilerin listesini getir",
+          "en çok satan müşteriler listesini getirin",
+          "en çok satan müşterilerin bir listesi",
+          "en çok satan müşteriler listesini elde edin",
+          "en çok satan müşteriler listesi"
+       ],
+       "responses": [
+         "top_musteri"
+       ]
+
+     },
+     {
+       "tag": "urun_musteri",
+       "patterns": [
+         "ürün kategori ilişkili grafiği getir",
+         "ürünlerin kategorilere göre satış miktarını getir",
+         "kategorilere göre satışların grafiğini çiz"
+       ],
+       "responses": [
+         "urun_kategori"
+       ]
+     },
+{
+   "tag":"topGrossingCities",
+   "patterns":[
+      "en çok ürün satan şehirleri listeleyin",
+      "en çok ürün satan şehirlerin listesini getir",
+      "en çok satan şehirler listesini getirin",
+      "en çok satan şehirlerin bir listesi",
+      "en çok satan şehirler listesini elde edin",
+      "en çok satan şehirler listesi"
+   ],
+   "responses":[
+      "top_grossing_cities"
+   ]
+},
+{
+   "tag":"çalışanSayısı",
+   "patterns":[
+      "şirketteki tüm çalışan sayısını getir",
+      "çalışan sayısı",
+      "şirkette kaç kişi çalışıyor",
+      "kaç çalışan var",
+      "şirkette kaç tane çalışan vardır",
+      "firmamızda kaç kişi çalışıyor",
+      "firmadaki çalışan sayısı nedir",
+      "şirketteki işçi sayısı",
+      "firmadaki toplam çalışan sayısını getir"
+   ],
+   "responses":[
+      "no_of_workers"
+   ]
+},
+{
+   "tag":"çalışanVerimliliği",
+   "patterns":[
+       "departmanlara göre çalışanların verimliliği grafiğini çiz",
+       "çalışanların verimliliğini göster",
+       "verimlilik oranını göster",
+       "çalışanların verimlilik oranını departmanlara göre göster",
+       "çalışan verimlilik oranı"
+   ],
+   "responses":[
+      "actual_productivity_rate"
+   ]
+},
+{
+   "tag":"çalışanDepartmanDağılımı",
+   "patterns":[
+      "çalışan departman dağılımını göster",
+      "çalışanların departmanlara göre dağılımını göster",
+      "her bir departmanda kaç tane çalışan var",
+      "departman dağılımı"
+   ],
+   "responses":[
+      "calisan_dagilimi"
+   ]
+},
+{
+   "tag":"tahmin",
+   "patterns":[
+      "2024 yılında Bush Somerset Collection Bookcase ürününün satış tahmini nedir",
+      "2025 yılında Black Box ürünü ne kadar satılacaktır",
+      "My Chair ürünü 2024 yılındaki satış tahminini getir"
+   ],
+   "responses":[
+         "ner"
+   ]
+},
+     {
+       "tag": "AttrÇalYaşDağılımı",
+       "patterns": [
+         "Yıpranmaya uğrayan (attrition) çalışanları filtrele ve yaşa göre sırala",
+         "Yıpranmaya uğrayan (attrition) çalışanların yaş dağılımı",
+         "Yıpranmaya uğrayan (attrition) yaşlararına göre dağılımı"
+
+       ],
+       "responses":
+               [
+                 "Attrcalisan_yas_dagilim"
+               ]
+     },
+     {
+       "tag": "calYaşDağılımı",
+       "patterns": [
+         "çalışanları filtrele ve yaşa göre sırala",
+         "çalışanların yaş dağılımı",
+         "çalışanları yaşlararına göre dağılımı"
+
+       ],
+       "responses":
+               [
+                 "calisan_yas_dagilim"
+               ]
+     },
+     {
+       "tag": "yaşaGöreAttrOarnı",
+       "patterns": [
+         "Yaş aralığına göre gruplayarak Attrition(yıpranmaya uğrayan) değerlerini say ve oranı hesapla",
+         "yaşa göre yıpranmaya uğrayana değerlerini getir"
+       ],
+       "responses":[
+       "attrition_yas_aralik"
+     ]
+     },
+     {
+       "tag": "calisanTahmini",
+       "patterns": [
+         "Çalışan performansı analizi yapabilir misin",
+         "çalışanların performansı analizi yap"
+       ],
+       "responses": [
+         "calisan_response"
+       ]
+     },
+     {
+       "tag": "calisanTahminSonuc",
+       "patterns": [
+         "45, 234, Sales, Life Sciences, 3, 4, 5",
+         "34, 1021, Human Resources, Marketing,5, 6, 0 ",
+         "56, 236, Research & Development, Medical, 7,6,0"
+       ],
+       "responses":
+               [
+                 "hesapla_performance"
+               ]
+     },
+
+          {
+    "tag": "siyaset",
+    "patterns": [
+      "3 milyon ile ön seçim vaadi mhp nin 10 olağan büyük kurultayı nda konuşan genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının 3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu mhp nin 10 olağan büyük kurultayı nda ",
+      "konuşan genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının 3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu",
+"genel_başkan adayı koray_aydın kürsüye beklenirken yapılan tezahüratlar ve ıslıklamalar üzerine divan başkanı tuğrul_türkeş mhp nin genel başkanlığı da genel başkan adaylığı da saygıdeğer işlerdir bu salondaki herkes ciddiye almak zorundadır dedi ve taşkınlıklara izin verilmeyeceğini salonda sükunet sağlanmadan konuşmaların başlamayacağını vurguladı",
+"türkeş devlet_bahçeli nin kurultay açılışında konuştuğu için adaylık nedeniyle ikinci bir konuşma yapmayacağını açıkladı",
+"konuşmasında kurultayın mhp nin tek başına iktidarına vesile olmasını dileyen aydın ak_parti nin mhp yi eleştirirken kaleleri bir bir fethederek yollarına devam ettiklerini söylediğini hatırlatarak iktidarın basın ve sivil toplumu susturduğunu ifade etti"
+
+    ],
+     "responses": [
+       "Sisyaset hakkında konuşmamayı tercih ediyorum"
+     ]},
+       {
+    "tag": "saglik",
+    "patterns": [
+"ister tango yap ister göbek at ! dünya sağlık örgütü nün rakamlarına göre 2000 de 66 olan ortalama ömür 2009 da 68 e yükseldi ama iskeletimiz uzun yaşam süresine hazır değil",
+"florence nightingale hastanesi nden ortopedi ve travmatoloji uzmanı prof dr uğur işıklar kemik yoğunluğunda azalma rahatsızlığındaki artışa dikkat çekiyor ayağı halıya takılan kişinin omuzu",
+"el bileği kırılabiliyor 2030 yılında hastane yataklarının üçte biri kemik erimesi sebebiyle kırık vakası yaşayan hastalardan oluşacak kadınların bu konuda dezavantajı daha yüksek bu yüzden güneşle temas etmeleri fazla kilo almamaları ya da zayıf kalmamaları gerekiyor aşırı zayıf kadınlarda kemik erimesi daha yoğun görülüyor",
+"kemikleri güçlendirmek için egzersiz dediğimizde insanlar ne yapacağım diye düşünüyor oysa egzersiz bir harekettir egzersiz yapamıyorsanız dans edin sadece kadınlara değil erkeklere de bol bol dans etmelerini öneriyorum tango yapın göbek atın zıplayın",
+             "akıl hastaneleri tarih olacak sağlık_bakanı_recep_akdağ yeni yılla birlikte ağır ruh sağlığı problemi olan hastaların tedavi edileceği toplum temelli ruh sağlığı merkezlerinin sayısının artırılacağını bildirdi hastanın evine en yakın yerde tedavi olacağı sistemde gerekirse kısa süreli bir yatışın ardından takip toplum temelli ruh sağlığı merkezlerinde"
+
+    ],
+         "responses": [
+           "Sağlıklı kalın"
+         ]
+  }
+   ]
+
+}
+

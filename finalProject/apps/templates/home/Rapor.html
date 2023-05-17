@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Profile {% endblock title %}
+
+{% block content %}
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dosya Verisi Alma/Yükleme</title>
+</head>
+<body>
+ <form action="/book_uploader" method="POST" enctype = "multipart/form-data">
+  <p>
+    <input type = "file" name = "file" />
+  </p>
+  <input type="submit" value="Gonder"/>
+</form>
+
+</body>
+</html>
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}{% endblock javascripts %}
