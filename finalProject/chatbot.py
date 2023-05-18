@@ -9,6 +9,7 @@ import random
 from graphics import top_musteri,top_grossing_cities,getPredict,urun_kategori,toplam_satis,calisan_dagilimi,\
     actual_productivity_rate,Attrcalisan_yas_dagilim,calisan_yas_dagilim, attrition_yas_aralik
 from calisanİslemler import hesapla_performance,calisan_response
+from tahminIslemler import before_tahmin, tahmin_soru
 from trnlp import SpellingCorrector
 
 
@@ -30,8 +31,11 @@ def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [w for w in sentence_words  if w not in ignore_letters]
     for word in sentence_words:
-      obj.setword(word.lower())
-      result.append(obj.get_stem)
+        if word.isnumeric():
+            result.append(word)
+        else:
+            obj.setword(word.lower())
+            result.append(obj.get_stem)
     print("Result: ",result)
     return result
 
@@ -58,28 +62,13 @@ def predict_class(sentence):
     return return_list
 
 #gramer, yazım denetleyicisi
-def correctSpelling(message):
+"""def correctSpelling(message):
   sentence = ""
   obj = SpellingCorrector()
   obj.settext(message)
   for i in obj.correction(all=True):
     sentence+=i[0] + " "
-  return sentence
-
-#satış tahmini için İSİM, ORG, LOC, TARİH vs. tespit etmek için
-def ner(sent):
-    sent = nltk.word_tokenize(sent)
-    sent = nltk.pos_tag(sent)
-    result = {'nnp':''}
-    #print(preprocess("2024 yılında Black Box ürününün satış tahmini"))
-    for i in sent:
-      if 'CD' in i:
-        result['cd'] = i[0]
-      if 'NNP' in i:
-        temp = result['nnp']
-        temp+=i[0] + " "
-        result['nnp'] = temp
-    return result
+  return sentence"""
 
 def get_response(intents_list, intents_json, message):
     tag = intents_list[0]['tag']
@@ -90,24 +79,21 @@ def get_response(intents_list, intents_json, message):
               if "_" in result:
                   if result == "hesapla_performance":
                       return hesapla_performance(message)
+                  if result == "before_tahmin":
+                      return before_tahmin(message)
                   else:
                       return  globals()[result]()
-              if i['tag'] == 'tahmin':
-                res = ner(message)
-                res = getPredict(res['cd'],res['nnp'])
-                result = res
 
     return result
 
 #SADECE CONSOLE DA ÇALIŞTIRMAK İSTENİRSE UNCOMMENT YAP
-"""print("GO! Bot çalışmaya başladı!")
+print("GO! Bot çalışmaya başladı!")
 while True:
     print("Ben: ")
     message = input("")
-    correctedSentence = correctSpelling(message)
-    ints = predict_class(correctedSentence)
+    #correctedSentence = correctSpelling(message)
+    ints = predict_class(message)
     print(ints)
     res = get_response(ints, intents, message)
     print("Chatbot: ")
     print(res)
-"""

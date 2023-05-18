@@ -741,16 +741,32 @@
    ]
 },
 {
-   "tag":"tahmin",
+   "tag":"tahminSoru",
    "patterns":[
-      "2024 yılında Bush Somerset Collection Bookcase ürününün satış tahmini nedir",
-      "2025 yılında Black Box ürünü ne kadar satılacaktır",
-      "My Chair ürünü 2024 yılındaki satış tahminini getir"
+      "Satış tahmini yapabilir misniz",
+      "Girilen verilerimize göre ürünün satış tahmini değerini hesaplar mısın",
+      "ürün satış tahmini",
+     "ürünün satış tahmin oranını getir",
+     "satış tahmini",
+     "tahmin"
    ],
    "responses":[
-         "ner"
+         "tahmin_soru"
    ]
 },
+     {
+       "tag": "tahminYap",
+       "patterns": [
+         "34, 1, Akron, Victoria Brennan",
+         "45, 2, Albuquerque, William Brown",
+         "56, 4, Canton, Ricardo Emerson",
+         "78, 5 Carlsbad, Christopher Conant",
+         "67, 3, Oklahoma City, Jane Waco"
+       ],
+       "responses": [
+         "before_tahmin"
+       ]
+     },
      {
        "tag": "AttrÇalYaşDağılımı",
        "patterns": [
