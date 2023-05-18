@@ -11,7 +11,8 @@ from graphics import top_musteri,top_grossing_cities,getPredict,urun_kategori,to
 from calisanİslemler import hesapla_performance,calisan_response
 from tahminIslemler import before_tahmin, tahmin_soru
 from trnlp import SpellingCorrector
-
+from nltk.stem import PorterStemmer
+stemmer = PorterStemmer()
 
 #ILK KEZ ÇALIŞTIRIYORSAN UNCOMMENT YAP
 #nltk.download('punkt')
@@ -31,11 +32,8 @@ def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [w for w in sentence_words  if w not in ignore_letters]
     for word in sentence_words:
-        if word.isnumeric():
-            result.append(word)
-        else:
-            obj.setword(word.lower())
-            result.append(obj.get_stem)
+        obj.setword(word.lower())
+        result.append(obj.get_stem)
     print("Result: ",result)
     return result
 
@@ -59,6 +57,7 @@ def predict_class(sentence):
     return_list = []
     for r in results:
         return_list.append({'tag': classes[r[0]], 'probability':str(r[1])})
+
     return return_list
 
 #gramer, yazım denetleyicisi
@@ -87,7 +86,7 @@ def get_response(intents_list, intents_json, message):
     return result
 
 #SADECE CONSOLE DA ÇALIŞTIRMAK İSTENİRSE UNCOMMENT YAP
-print("GO! Bot çalışmaya başladı!")
+"""print("GO! Bot çalışmaya başladı!")
 while True:
     print("Ben: ")
     message = input("")
@@ -96,4 +95,4 @@ while True:
     print(ints)
     res = get_response(ints, intents, message)
     print("Chatbot: ")
-    print(res)
+    print(res)"""

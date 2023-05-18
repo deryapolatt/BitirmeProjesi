@@ -87,13 +87,14 @@ def tahmin_yap(shipDate, numericId, city, customerName):
     yeni_veri[columns_to_normalize] = scaler.fit_transform(yeni_veri[columns_to_normalize])
     print(yeni_veri.shape)
     tahmin = modelTahmin.predict(yeni_veri)
-    return "Tahmin:" + tahmin
+    return  tahmin
 
 def before_tahmin(sent):
-    text = sent.split(", ")
+    text = sent.split(",")
     result = tahmin_yap(int(text[0]), int(text[1]), text[2], text[3])
-
+    return str(result[0])
 def tahmin_soru():
     return "Satış tahmin oranını öğrenmek için aşağıdaki verileri sırasıyla girmeniz gerekmektedir:" \
            " sevkiyat tarihi, numerik id, şehir ismi ve müşteri ismi"
-#tahmin_yap(35,500,'Los Angeles','Ken Dana')
+#tahmin_yap('35','500','Los Angeles','Ken Dana')
+#before_tahmin("35,500,Los Angeles,Ken Dana")

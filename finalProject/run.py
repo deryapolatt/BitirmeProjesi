@@ -6,7 +6,7 @@ from  flask_minify  import Minify
 from   sys import exit
 from flask import Flask, render_template, request, jsonify
 
-from chatbot import correctSpelling, predict_class, get_response
+from chatbot import predict_class, get_response
 from apps.config import config_dict
 from apps import create_app, db
 
@@ -34,8 +34,7 @@ if not DEBUG:
 def predict():
     intents = json.loads(open("intents.json", encoding="utf8").read())
     text = request.get_json().get("message")
-    correctedSentence = correctSpelling(text)
-    ints = predict_class(correctedSentence)
+    ints = predict_class(text)
     print(ints)
     response = get_response(ints, intents, text)
     message = {"answer": response}
