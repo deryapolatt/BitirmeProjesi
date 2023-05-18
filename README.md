@@ -8,6 +8,7 @@ Proje hakkında açıklama
 - 👉 pip install -r requirements.txt 
 - 👉 preprocess.py dosyasını çalıştırınız
 - 👉 employee.py dosyasını çalıştırınız
+- 👉 satisTahmin.py dosyasını çalıştırınız
 - 👉 chatbotmodel.h5, random_forest.joblib, classess.pkl ve words.pkl dosyalarının oluşturulduğundan emin olunuz
 - 👉 run.py dosyasını çalıştırınız
 
