@@ -17,6 +17,8 @@ trnlp
 pandas
 keras
 tensorflow
-
+sklearn
+matplotlib
+nltk
 
 # flask_mysqldb
