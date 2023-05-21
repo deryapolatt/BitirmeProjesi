@@ -70,7 +70,15 @@ class Chatbox{
         this.messages.slice().reverse().forEach(function(item, index) {
             if (item.name === "Sam")
             {
-                html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
+                if((item.message).includes("png")){
+
+                      html+= '<div><img class="image" src="'+ item.message + '" height="200" ></div>'
+                     //html += '<a class="image-link" href="https://i.hizliresim.com/r29jjog.png">Open popup</a>'
+                    }
+                else{
+                     html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
+
+                    }
             }
             else
             {
@@ -81,6 +89,8 @@ class Chatbox{
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
     }
+
+
 }
 const chatbox = new Chatbox();
 chatbox.display();

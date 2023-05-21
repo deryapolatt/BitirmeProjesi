@@ -93,14 +93,14 @@ early_stopping = EarlyStopping(monitor='val_loss', patience=50, restore_best_wei
 
 hist = model.fit(np.array(X_train), np.array(y_train), epochs=200, batch_size=30, verbose=1, validation_data=(X_test,y_test),callbacks=[early_stopping])
 
-plt.plot(hist.history['loss'], label='train')
-plt.plot(hist.history['val_loss'], label='validation')
+plt.plot(hist.history['accuracy'], label='train')
+plt.plot(hist.history['val_accuracy'], label='validation')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
-plt.title('Train and Validation Loss')
+plt.title('Train and Validation Accuracy')
 plt.legend()
+plt.savefig("figures/preprocessAcc.png")
 plt.show()
-
 model.summary()
 model.save('chatbotmodel.h5',hist)
 print('Done')

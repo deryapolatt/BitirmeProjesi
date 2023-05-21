@@ -15,8 +15,8 @@ def toplam_satis():
     plt.xlabel('Yıl')
     plt.ylabel('Toplam Satış')
     plt.savefig("figures/myPlot.png")
-    return "figures/myPlot.png"
-
+    plt.show()
+    return "Yıllara Göre Toplam Satış grafiği"
 def top_musteri():
     customer_sales = df.groupby('Customer Name')['Sales'].sum().sort_values(ascending=False)[:20]
     customer_sales.plot(kind='bar', figsize=(10, 6))
@@ -25,6 +25,7 @@ def top_musteri():
     plt.ylabel('Satış Miktarı')
     plt.savefig("figures/topMusteri.png")
     plt.show()
+    return "İlk 20 Müşteri"
 
 def getPredict(year, productName):
   return " " + year + " yılında " +productName+" satış tahmini 789909809'dır"
@@ -38,6 +39,7 @@ def top_grossing_cities():
     plt.ylabel('Satış Miktarı')
     plt.savefig("figures/topcity.png")
     plt.show()
+    return "İlk 20 Şehir"
 
 def urun_kategori():
     customer_sales = df.groupby('Category')['Sales'].sum().sort_values(ascending=False)
@@ -47,15 +49,17 @@ def urun_kategori():
     plt.ylabel('Satış Miktarı')
     plt.savefig("figures/urunkategori.png")
     plt.show()
+    return "Kategori-Satış"
 
 def calisan_dagilimi():
     sales_by_year = df2.groupby('team')['no_of_workers'].sum()
     plt.bar(sales_by_year.index, sales_by_year.values)
-    plt.title('No of workers by team')
-    plt.xlabel('Team')
-    plt.ylabel('No of workers')
+    plt.title('Departmanlara göre çalışan sayısı')
+    plt.xlabel('Departman')
+    plt.ylabel('Çalışan sayısı')
     plt.savefig("figures/calisandagilimi.png")
     plt.show()
+    return "Departmanlara göre çalışan sayısı"
 def actual_productivity_rate():
     sales_by_year = df2.groupby('team')['actual_productivity'].sum()
     plt.bar(sales_by_year.index, sales_by_year.values)
@@ -64,6 +68,7 @@ def actual_productivity_rate():
     plt.ylabel('Actual productivity')
     plt.savefig("figures/productivity.png")
     plt.show()
+    return "Verimlilik"
 
 def Attrcalisan_yas_dagilim():
     # Attrition değeri "Yes" olan çalışanları filtrele ve yaşa göre sırala
@@ -75,6 +80,7 @@ def Attrcalisan_yas_dagilim():
     plt.ylabel('Çalışan Sayısı')
     plt.title('Çalışanların Yaş Dağılımı')
     plt.show()
+    return "Yıpranmış olan çalışanlar"
 
 def calisan_yas_dagilim():
     # Attrition değeri "No" olan çalışanları filtrele ve yaşa göre sırala
@@ -86,6 +92,7 @@ def calisan_yas_dagilim():
     plt.ylabel('Çalışan Sayısı')
     plt.title('Çalışanların Yaş Dağılımı')
     plt.show()
+    return "Çalışan yaş dağılımı"
 
 def attrition_yas_aralik():
     # Yaş aralıklarını tanımla
@@ -101,7 +108,6 @@ def attrition_yas_aralik():
         attrition_ratio = 0
         if 'Yes' in attrition_count:
             attrition_ratio = attrition_count['Yes'] / attrition_count.sum()
-
         attrition_ratios.append(attrition_ratio)
 
     age_labels = ['{}-{}'.format(age_range[0], age_range[1]) for age_range in age_ranges]
@@ -111,4 +117,5 @@ def attrition_yas_aralik():
     plt.title('Yaş Aralığına Göre Attrition Oranları')
     plt.xticks(rotation=45)
     plt.show()
+    return "Yaş aralığına göre gruplayarak Attrition değerleri"
 

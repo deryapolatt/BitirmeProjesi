@@ -13,7 +13,6 @@ from tahminIslemler import before_tahmin, tahmin_soru
 from trnlp import SpellingCorrector
 from nltk.stem import PorterStemmer
 stemmer = PorterStemmer()
-
 #ILK KEZ ÇALIŞTIRIYORSAN UNCOMMENT YAP
 #nltk.download('punkt')
 #nltk.download('averaged_perceptron_tagger')
@@ -50,6 +49,7 @@ def bag_of_words(sentence):
 #PREDICTION - tahmin
 def predict_class(sentence):
     bow = bag_of_words(sentence)
+
     res = model.predict(np.array([bow]))[0]
     ERROR_THRESHOLD = 0.25
     results = [[i,r] for i, r in enumerate(res) if r> ERROR_THRESHOLD]
@@ -70,6 +70,8 @@ def predict_class(sentence):
   return sentence"""
 
 def get_response(intents_list, intents_json, message):
+    if not intents_list:
+        return "Soruyu anlayamadım. Lütfen, farklı bir şekilde sormayı deneyebilir misiniz?"
     tag = intents_list[0]['tag']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
@@ -79,15 +81,19 @@ def get_response(intents_list, intents_json, message):
                   if result == "hesapla_performance":
                       return hesapla_performance(message)
                   if result == "before_tahmin":
-                      return before_tahmin(message)
+                      text = message.split(",")
+                      if len(text) == 7:
+                          return hesapla_performance(message)
+                      else:
+                          return before_tahmin(message)
                   else:
                       return  globals()[result]()
 
     return result
 
 #SADECE CONSOLE DA ÇALIŞTIRMAK İSTENİRSE UNCOMMENT YAP
-"""print("GO! Bot çalışmaya başladı!")
-while True:
+print("GO! Bot çalışmaya başladı!")
+"""while True:
     print("Ben: ")
     message = input("")
     #correctedSentence = correctSpelling(message)

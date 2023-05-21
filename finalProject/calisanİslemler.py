@@ -33,12 +33,15 @@ def employee_analysis(age,dailyRate,departmentName, edFieldName,yearsAtComp,year
 
 def calisan_response():
     return "Yaş, Günlük oran, Departman, Eğitim alanı, Şirkette kaç yıldır çalıştığı," \
-           " Şu anki pozisyonda kaç yıldır çalıştığı ve en son promotiondan kaç yıl geçtiği bilgileri kaç yıl önce alındığı bilgilerini sırasıyla girebilir misiniz? "
+           " Şu anki pozisyonda kaç yıldır çalıştığı ve en son promotiondan kaç yıl geçtiği bilgileri sırasıyla girebilir misiniz? "
 
 def hesapla_performance(sent):
-    text = sent.split(", ")
+    text = sent.split(",")
     result = employee_analysis(int(text[0]),int(text[1]),text[2],text[3],int(text[4]),int(text[5]),int(text[6]))[0]
-    return "Tahmin: " + result
+    if result == "Yes":
+        return "Tahmin: Evet"
+    elif result == "No":
+        return "Tahmin: Hayır"
 
 #print(employee_analysis(32,279,'Sales','Life Sciences',6,4,0))
-#print(hesapla_performance("45, 234, Sales, Life Sciences, 3, 4, 5")[0])
+#print(hesapla_performance("43, 1273, Research & Development, Medical, 3, 4, 5"))

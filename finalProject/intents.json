@@ -868,11 +868,6 @@
         "Westfield", "Westland", "Westminster", "Wheeling", "Whittier",
         "Wichita", "Wilmington", "Wilson", "Woodbury", "Woodland",
         "Woodstock", "Woonsocket", "Yonkers", "York", "Yucaipa", "Yuma",
-         "34, 1, Akron, Victoria Brennan",
-         "45, 2, Albuquerque, William Brown",
-         "56, 4, Canton, Ricardo Emerson",
-         "78, 5 Carlsbad, Christopher Conant",
-         "67, 3, Oklahoma City, Jane Waco",
          "Aaron Bergman", "Aaron Hawkins", "Aaron Smayling",
         "Adam Bellavance", "Adam Hart", "Adam Shillingsburg",
         "Adrian Barton", "Adrian Hane", "Adrian Shami", "Aimee Bixby",
@@ -1153,9 +1148,9 @@
      {
        "tag": "calisanTahminSonuc",
        "patterns": [
-         "45, 234, Sales, Life Sciences, 3, 4, 5",
-         "34, 1021, Human Resources, Marketing,5, 6, 0 ",
-         "56, 236, Research & Development, Medical, 7,6,0"
+         "Human Resources", "Research & Development", "Sales",
+         "Human Resources", "Life Sciences", "Marketing", "Medical",
+        "Other", "Technical Degree"
        ],
        "responses":
                [

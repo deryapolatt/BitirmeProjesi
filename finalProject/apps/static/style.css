@@ -198,3 +198,43 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+
+
+*{
+    padding:0;
+    margin:0;
+}
+.imagemodalbox{
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    background-color:#000;
+    display:none;
+}
+.modalheader, .modalbody{
+    height:50px;
+    width:80%;
+    position:relative;
+    margin:auto;
+
+}
+.modalheader span{
+    color:white;
+    font-size:45px;
+    cursor:pointer;
+    display:block;
+    text-align:right;
+    font-weight:800;
+    transition:opacity;
+}
+.modalheader span:hover{
+    opacity:0.7;
+}
+.modalbody{
+    text-align:center;
+    background-color:pink;
+}

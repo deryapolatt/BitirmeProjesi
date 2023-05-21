@@ -10,6 +10,8 @@ from chatbot import predict_class, get_response
 from apps.config import config_dict
 from apps import create_app, db
 
+from flask import Flask, render_template
+
 # WARNING: Don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
@@ -40,6 +42,7 @@ def predict():
     message = {"answer": response}
     print(response)
     return jsonify(message)
+
 
 if DEBUG:
     app.logger.info('DEBUG            = ' + str(DEBUG)             )
