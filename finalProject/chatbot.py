@@ -14,8 +14,8 @@ from trnlp import SpellingCorrector
 from nltk.stem import PorterStemmer
 stemmer = PorterStemmer()
 #ILK KEZ ÇALIŞTIRIYORSAN UNCOMMENT YAP
-#nltk.download('punkt')
-#nltk.download('averaged_perceptron_tagger')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
 
 intents = json.loads(open("intents.json", encoding="utf8").read())
 words = pickle.load(open('words.pkl', 'rb'))
