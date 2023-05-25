@@ -81,6 +81,8 @@ model.add(Dense(256,input_shape=(len(train_x[0]),),activation='relu'))
 model.add(Dropout(0.4))
 model.add(Dense(512,activation='relu'))
 model.add(Dropout(0.4))
+model.add(Dense(1024,activation='relu'))
+model.add(Dropout(0.4))
 model.add(Dense(len(train_y[0]),activation='softmax'))
 
 #Optimizer - yerine 'adam' de kullanılabilir

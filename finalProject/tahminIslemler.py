@@ -98,3 +98,4 @@ def tahmin_soru():
            " sevkiyat tarihi, numerik id, şehir ismi ve müşteri ismi"
 #tahmin_yap('35','500','Los Angeles','Ken Dana')
 #before_tahmin("35,500,Los Angeles,Ken Dana")
+#2017,10002892,Henderson,Claire Gute

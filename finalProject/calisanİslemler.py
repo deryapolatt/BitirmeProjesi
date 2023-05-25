@@ -45,3 +45,4 @@ def hesapla_performance(sent):
 
 #print(employee_analysis(32,279,'Sales','Life Sciences',6,4,0))
 #print(hesapla_performance("43, 1273, Research & Development, Medical, 3, 4, 5"))
+#27,1392,Sales,Other,3,4,5
