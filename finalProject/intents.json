@@ -1158,34 +1158,124 @@
                ]
      },
 
-          {
-    "tag": "siyaset",
-    "patterns": [
-      "3 milyon ile ön seçim vaadi mhp nin 10 olağan büyük kurultayı nda konuşan genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının 3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu mhp nin 10 olağan büyük kurultayı nda ",
-      "konuşan genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının 3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu",
-"genel_başkan adayı koray_aydın kürsüye beklenirken yapılan tezahüratlar ve ıslıklamalar üzerine divan başkanı tuğrul_türkeş mhp nin genel başkanlığı da genel başkan adaylığı da saygıdeğer işlerdir bu salondaki herkes ciddiye almak zorundadır dedi ve taşkınlıklara izin verilmeyeceğini salonda sükunet sağlanmadan konuşmaların başlamayacağını vurguladı",
-"türkeş devlet_bahçeli nin kurultay açılışında konuştuğu için adaylık nedeniyle ikinci bir konuşma yapmayacağını açıkladı",
-"konuşmasında kurultayın mhp nin tek başına iktidarına vesile olmasını dileyen aydın ak_parti nin mhp yi eleştirirken kaleleri bir bir fethederek yollarına devam ettiklerini söylediğini hatırlatarak iktidarın basın ve sivil toplumu susturduğunu ifade etti"
+                 {
+  "tag": "siyaset",
+  "patterns": [
+    "3 milyon ile ön seçim vaadi mhp nin 10 olağan büyük kurultayı nda konuşan",
+    "genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının",
+    "3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu mhp nin 10 olağan büyük kurultayı nda ",
+    "konuşan genel başkan adayı koray_aydın seçimlerden önce partinin üye sayısının",
+    " 3 milyona ulaştırılması hedefini koyarak ön seçim uygulaması vaadinde bulundu",
+    "genel_başkan adayı koray_aydın kürsüye beklenirken yapılan tezahüratlar ve ıslıklamalar üzerine",
+    "divan başkanı tuğrul_türkeş mhp nin genel başkanlığı da genel başkan adaylığı da saygıdeğer işlerdir",
+    "bu salondaki herkes ciddiye almak zorundadır dedi ve taşkınlıklara izin verilmeyeceğini salonda sükunet",
+    "sağlanmadan konuşmaların başlamayacağını vurguladı",
+    "türkeş devlet_bahçeli nin kurultay açılışında konuştuğu için adaylık nedeniyle ikinci bir konuşma yapmayacağını açıkladı",
+    "konuşmasında kurultayın mhp nin tek başına iktidarına vesile olmasını dileyen aydın ak_parti nin mhp yi eleştirirken kaleleri",
+    "bir bir fethederek yollarına devam ettiklerini söylediğini hatırlatarak iktidarın basın ve sivil toplumu susturduğunu ifade etti",
+    "vereceklerdir umarız kısa zamanda türkiye nin bu savunmasına katkı sağlamak amacıyla patriot füzelerinin nereye konuşlanacağı",
+    "ve ne miktarda olacağı kesinlikle bizim de karar sürecinde olacağımız bir şekilde kabul edilmiş olacak dedi",
+    " arınç türkiye nin nato dan talep ettiği patriot hava ve füze savunma sistemlerine ilişkin biz nato üyesi bir ülkeyiz",
+    " nato nun bütünlüğü içerisinde yer alıyoruz sadece savunma amaçlı olarak bu füzelerin türkiye de konuşlanmasına ihtiyaç olduğunu düşünüyoruz dedi",
+    " arınç bağdat merkezi hükümetiyle irak ın kuzeyindeki bölgesel yönetim arasında ihtilaf konuları var",
+    " biz_türkiye olarak irak ın bütünlüğünü kabul etmiş bağdat hükümetiyle ilişkileri bulunan bir hükümet olarak",
+    " bu sorunların kendi içlerinde diplomasi ve barış yoluyla çözülmesinden yanayız bu tartışmaların bu silahlı",
+    " çatışmaların hiçbir zaman tarafı da olmayacağız ama kerkük teki yurttaşlarımızın soydaşlarımızın güvenliklerini hayat varlıklarını",
+    " tehdit eden bir gelişme olursa türkiye irak hükümeti nezdinde de diğer otonom yönetim nezdinde de gerekli çabaları gösteriyor ve gösterecek dedi",
+    "vereceklerdir umarız kısa zamanda türkiye nin bu savunmasına katkı sağlamak amacıyla patriot füzelerinin nereye konuşlanacağı",
+    " ve ne miktarda olacağı kesinlikle bizim de karar sürecinde olacağımız bir şekilde kabul edilmiş olacak dedi arınç türkiye nin nato dan",
+    " talep ettiği patriot hava ve füze savunma sistemlerine ilişkin biz nato üyesi bir ülkeyiz nato nun bütünlüğü içerisinde yer alıyoruz",
+    " sadece savunma amaçlı olarak bu füzelerin türkiye de konuşlanmasına ihtiyaç olduğunu düşünüyoruz dedi arınç bağdat merkezi hükümetiyle",
+    " irak ın kuzeyindeki bölgesel yönetim arasında ihtilaf konuları var biz_türkiye olarak irak ın bütünlüğünü kabul etmiş bağdat hükümetiyle",
+    " ilişkileri bulunan bir hükümet olarak bu sorunların kendi içlerinde diplomasi ve barış yoluyla çözülmesinden yanayız bu tartışmaların",
+    " bu silahlı çatışmaların hiçbir zaman tarafı da olmayacağız ama kerkük teki yurttaşlarımızın soydaşlarımızın güvenliklerini hayat varlıklarını",
+    " tehdit eden bir gelişme olursa türkiye irak hükümeti nezdinde de diğer otonom yönetim nezdinde de gerekli çabaları gösteriyor ve gösterecek dedi",
+    "gelmemiştir önümüzdeki bakanlar_kurulu nda tekrar görüşülecektir dedi turgut_özal ın otopsisi arınç turgut_özal ın otopsisinde 4 çeşit zehir bulunduğu",
+    " iddiasına ilişkin bunların otopsi raporu sonucunda elde edilen bilgiler ve bulgular olduğu söylendi doğru da olabilir yanlış da olabilir henüz otopsi",
+    " raporunun bizim tarafımızdan da sizler tarafından da bilinmesinin bilinmesinin mümkün olmadığını düşünüyorum ama doğru olan şudur otopsi raporunun",
+    " verilmesinden sonra adli_tıp ın 1 ihtisas dairesi nin bu rapora göre kesin kendi düşüncesini bildirmesi ve raporunu yazması gerekiyor bizim de sizin",
+    " de mahkemelerin de yargının da dikkate alacağı tek şey 1 ihtisas kurulu nun bu konu hakkındaki raporunu veya sonucunu hepimizin bildikten sonra ",
+    "olabileceğini söyleyebilirim hepimiz adli_tıp ın raporunu bekleyeceğiz kendi düşüncesinin sorulması üzerine arınç şahsi düşüncem zaten bu konuda",
+    " söz konusu olamaz bu bir teknik konudur diye konuştu her olay arkasından gerekirse otopsinin yapıldığını ifade eden arınç şöyle konuştu ben zamanında da "
 
-    ],
-     "responses": [
-       "Sisyaset hakkında konuşmamayı tercih ediyorum"
-     ]},
-       {
-    "tag": "saglik",
-    "patterns": [
-"ister tango yap ister göbek at ! dünya sağlık örgütü nün rakamlarına göre 2000 de 66 olan ortalama ömür 2009 da 68 e yükseldi ama iskeletimiz uzun yaşam süresine hazır değil",
-"florence nightingale hastanesi nden ortopedi ve travmatoloji uzmanı prof dr uğur işıklar kemik yoğunluğunda azalma rahatsızlığındaki artışa dikkat çekiyor ayağı halıya takılan kişinin omuzu",
-"el bileği kırılabiliyor 2030 yılında hastane yataklarının üçte biri kemik erimesi sebebiyle kırık vakası yaşayan hastalardan oluşacak kadınların bu konuda dezavantajı daha yüksek bu yüzden güneşle temas etmeleri fazla kilo almamaları ya da zayıf kalmamaları gerekiyor aşırı zayıf kadınlarda kemik erimesi daha yoğun görülüyor",
-"kemikleri güçlendirmek için egzersiz dediğimizde insanlar ne yapacağım diye düşünüyor oysa egzersiz bir harekettir egzersiz yapamıyorsanız dans edin sadece kadınlara değil erkeklere de bol bol dans etmelerini öneriyorum tango yapın göbek atın zıplayın",
-             "akıl hastaneleri tarih olacak sağlık_bakanı_recep_akdağ yeni yılla birlikte ağır ruh sağlığı problemi olan hastaların tedavi edileceği toplum temelli ruh sağlığı merkezlerinin sayısının artırılacağını bildirdi hastanın evine en yakın yerde tedavi olacağı sistemde gerekirse kısa süreli bir yatışın ardından takip toplum temelli ruh sağlığı merkezlerinde"
+  ],
+   "responses": [
+     "Sisyaset hakkında konuşmamayı tercih ediyorum"
+   ]},
+     {
+  "tag": "saglik",
+  "patterns": [
+  "ister tango yap ister göbek at ! dünya sağlık örgütü nün rakamlarına göre 2000 de 66 olan ortalama ömür 2009 da 68 e yükseldi",
+    " ama iskeletimiz uzun yaşam süresine hazır değil",
+  "florence nightingale hastanesi nden ortopedi ve travmatoloji uzmanı prof dr uğur işıklar kemik yoğunluğunda azalma rahatsızlığındaki",
+    " artışa dikkat çekiyor ayağı halıya takılan kişinin omuzu",
+  "el bileği kırılabiliyor 2030 yılında hastane yataklarının üçte biri kemik erimesi sebebiyle kırık vakası yaşayan hastalardan oluşacak",
+    " kadınların bu konuda dezavantajı daha yüksek bu yüzden güneşle temas etmeleri fazla kilo almamaları ya da zayıf kalmamaları gerekiyor",
+    " aşırı zayıf kadınlarda kemik erimesi daha yoğun görülüyor",
+  "kemikleri güçlendirmek için egzersiz dediğimizde insanlar ne yapacağım diye düşünüyor oysa egzersiz bir harekettir egzersiz yapamıyorsanız",
+    " dans edin sadece kadınlara değil erkeklere de bol bol dans etmelerini öneriyorum tango yapın göbek atın zıplayın",
+               "akıl hastaneleri tarih olacak sağlık_bakanı_recep_akdağ yeni yılla birlikte ağır ruh sağlığı problemi olan hastaların tedavi",
+    " edileceği toplum temelli ruh sağlığı merkezlerinin sayısının artırılacağını bildirdi hastanın evine en yakın yerde tedavi olacağı sistemde",
+    " gerekirse kısa süreli bir yatışın ardından takip toplum temelli ruh sağlığı merkezlerinde"
 
-    ],
-         "responses": [
-           "Sağlıklı kalın"
-         ]
-  }
+  ],
+       "responses": [
+         "Sağlıklı kalın"
+       ]
+},
+   {
+     "tag": "dunya",
+     "patterns": [
+       "garip siparişleri elbette yukarıda sıralanan maddelerle sona ermiyor böylece resepsiyonu arayıp odasına haşlanmış",
+       " karınca gönderilmesini isteyen müşterinin siparişi ise kendisine yedinci sırada yer bulmuş oluyor normal şartlarda zengin malzeme",
+       " ve bol çeşit kullanılarak hazırlanan kulüp sandviçi hiçbir şeysiz isteyen bir müşterinin sadece sandviç ekmeği",
+       " ve salatayla hazırlanmış kulüp sandviç siparişi ise sekizinci oldu bu arada kırmızı veya beyaz et ya da deniz ürünleriyle",
+       " hazırlanan ancak içinde mutlaka pirinç bulunan ispanyol spesiyalitesi paella yı pirinçsiz isteyen müşterinin siparişi",
+       " de tuhaf talepler listesine dokuzuncu sıradan girmeyi başardı onuncu sırada ise bolonez sosuyla hazırlanan italyan makarna",
+       " spesiyalitesi spagetti bolognese i geleneksel tarifinin aksine sossuz isteyen müşterinin talebi yer aldı",
+       " oda servisine haşlanmış karınca siparişi otel misafirleri müşteri kaprisine alışık resepsiyon görevlilerini her seferinde",
+       " şaşırtmayı başarıyor bir alman turizm portalının dünya genelinde 500 e yakın otel arasında yaptığı araştırma neticesinde",
+       " hazırladığı tuhaf müşteri siparişleri listesi müşterilerin talepleri arasında haşlanmış karıncadan pirinçsiz pilava kadar uzanıyor",
+       " alman turizm ve seyahat portalı lastminute de dünya genelinde otel müşterilerinin odalarına sipariş ettiği birbirinden garip",
+       " yemek taleplerini tuhaf siparişlerde ilk on adıyla bir araya getirdi portalın hazırladığı listede ilk ona giren garip siparişler",
+       " arasında ilk sırada patates püresiyle karışık dondurma yer aldı listede ikinci sırada yer alan talep ise tavuk salatasının tavuk",
+       " yerine balıkla gönderilmesini isteyen müşterinin siparişi oldu üçüncü sırada ise artık bu kadarına da pes dedirtecek türden bir talep",
+       " olan tereyağlı karpuzun yer aldığı görüldü dördüncü sırada da pizza malzemesi olarak mantar ve kaşar peyniri yerine kızartılmış patates",
+       " ve ananas kullanılmasını isteyen müşterinin talebi yer aldı dondurmasının çikolata ve mayonez ile süslenmesini isteyen müşterinin siparişi",
+       " beşinci olurken ısmarladığı sandviçinin üzerine çikolata sosu dökülmesini isteyen müşterinin talebi altıncı oldu müşterilerin",
+       "200 kilometre uzaklıktaki hawaii için de tsunami uyarısı geldi pasifik_tsunami_uyarı_merkezi nden gerard fryer dev dalgaların",
+       " öğle saatlerinde hawaii sahiline ulaştığını ancak bu dalgaların beklendiği kadar büyük olmadığını belirtti akşam saatlerinde",
+       " de hawaii için verilen uyarı yayından kaldırıldı sandy vurarak geliyor karayipler i vuran sandy kasırgası nedeniyle ölenlerin",
+       " sayısının 65 e yükseldiği bildirildi rotasını abd nin doğu kıyılarına çeviren kasırganın jamaika küba ve bahamalar ı doğrudan etkilediği",
+       " bununla birlikte en fazla can ve mal kaybının haiti de olduğu belirtildi sandy kasırgasına 51 kurban veren haiti de 2010 depreminin mağdur",
+       " ettiği yaklaşık 370 bin kişi halen geçici konutlarda yaşamını sürdürmeye çalışıyor bu arada abd_başkanı_barack_obama sandy kasırgası nedeniyle",
+       " virginia ve colorado da yapacağı iki günlük seçim turunu iptal etti obama nın gelişmeleri takip etmek için programlarını iptal ettiği",
+       " öğrenilirken cumhuriyetçi rakibi mitt_romney nin de virginia daki seçim kampanyasını iptal ettiği bildirildi"
+     ],
+   "responses": [
+     "Dunya konuları çok ilgi çekicidir"
    ]
+   },
+   {
+     "tag": "ekonomi",
+     "patterns": [
+       " küresel piyasalarda eurogroup takip ediliyor küresel piyasalar geçtiğimiz hafta artan risk iştahı",
+       " ve avrupa da yunanistan ve ispanya da borç krizinin çözümüne yönelik iyimser beklentilerle önemli yükselişler kaydetti",
+       " abd de dow_jones endeksi geçtiğimiz hafta gerçekleştirdiği yaklaşık yüzde 3 5 oranındaki yükselişle 8 kasım tarihinden",
+       " beri altında seyrettiği 13 000 puanın üzerinde kapandı küresel ekonomik aktivitede düzelmeyi işaret eden",
+       " makroekonomik verilerin moraliyle yükselişe geçen hisse senedi piyasalarında avrupa tarafında da yunanistan ve ispanya borç krizinin",
+       " çözümüne yönelik iyimser beklentiyle almanya da dax_endeksi art arda beşinci işlem gününü de yükselişle kapattı dax_endeksi cuma günü yüzde 0 89",
+       " oranında fransa da cac 40 endeksi yüzde 0 87 ispanya da ibex 35 endeksi yüzde 0 43 oranında yükseliş kaydetti yurt içinde ise imkb",
+       " nin hafta bazında genel olarak küresel piyasalardan negatif yönde ayrıştığını ancak haftanın son işlem günündeki yükselişiyle endeksin",
+       " 71 000 direncinin hemen üzerinde kapattığı görüldü analistler küresel hisse senedi piyasalarının bu haftaya geçtiğimiz haftaki sert yükselişin",
+       " kar satışları ile başlayabileceğini ancak piyasaların yönünü bugün yapılacak eurogroup toplantısından yunanistan ve ispanya nın borç sorununa",
+       " yönelik çıkacak haber ve açıklamaların belirleyeceğini kaydediyor piyasaların bugün takip edeceği veriler şöyle 14 30 türkiye tcmb kasım ayı reel",
+       " kesim güven endeksi 14 30 türkiye tcmb kasım ayı kapasite kullanım oranı 17 00 abd dallas fed imalat sanayi endeksi"
+     ]
+   }
+ ]
+
+
 
 }
 
