@@ -88,7 +88,7 @@ model.add(Dense(len(train_y[0]),activation='softmax'))
 #Optimizer - yerine 'adam' de kullanılabilir
 sgd = SGD(learning_rate=1e-1, decay=1e-6, momentum=0.9, nesterov=True)
 
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=50, restore_best_weights=True)
@@ -98,7 +98,7 @@ hist = model.fit(np.array(X_train), np.array(y_train), epochs=200, batch_size=30
 plt.plot(hist.history['accuracy'], label='train')
 plt.plot(hist.history['val_accuracy'], label='validation')
 plt.xlabel('Epoch')
-plt.ylabel('Loss')
+plt.ylabel('Accuracy')
 plt.title('Train and Validation Accuracy')
 plt.legend()
 plt.savefig("figures/preprocessAcc.png")
