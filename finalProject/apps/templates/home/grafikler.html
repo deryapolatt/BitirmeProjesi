@@ -1,0 +1,120 @@
+
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %}
+
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+  <div class="section-header pb-6 bg-primary text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center">
+                        <h1 class="display-3 mb-4"> Analiz Grafikleri </h1>
+                        <p> Satış Tahmini ve Çalışan Yıpranma Durumunuzu Grafiklerden İnceleyebilirsiniz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">En Çok Satış Yapan 20 Müşteri</h5>
+<!--            <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>-->
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+
+              <img width="500" height="500" src="/static/assets/img/1.png" class="" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">En Çok Satış Yapılan 20 Şehi</h5>
+<!--            <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>-->
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas ></canvas>
+              <img width="500" height="300" src="/static/assets/img/2.png" class="" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">Satışların Kategorilere Göre Ayrımı</h5>
+<!--            <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>-->
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas ></canvas>
+              <img width="500" height="300" src="/static/assets/img/3.png" class="" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">İlk 20 Alt Kategori</h5>
+<!--            <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>-->
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas ></canvas>
+              <img width="500" height="300" src="/static/assets/img/4.png" class="" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">En Çok Satılan 20 Ürün</h5>
+<!--            <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>-->
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <img width="500" height="450" src="/static/assets/img/5.png" class="" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+{% endblock content %}
+
+
+
+
+{% block javascripts %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="/static/assets/demo/chart-area-demo.js"></script>
+    <script src="/static/assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="/static/assets/js/datatables-simple-demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+
+{% endblock javascripts %}
