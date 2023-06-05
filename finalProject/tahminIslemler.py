@@ -88,11 +88,15 @@ def tahmin_yap(shipDate, numericId, city, customerName):
     print(yeni_veri.shape)
     tahmin = modelTahmin.predict(yeni_veri)
     return  tahmin
-
 def before_tahmin(sent):
     text = sent.split(",")
     result = tahmin_yap(int(text[0]), int(text[1]), text[2], text[3])
-    return str(result[0])
+    return text[0] + "yılında, " + text[1] + " id numaralı ürününüz için " + text[2] + " şehrindeki " + text[4] \
+           + " isimli müşterinize " + str(result[0] * 1000) + " miktarında satış yapılması tahmin edilmektedir"
+# def before_tahmin(sent):
+#     text = sent.split(",")
+#     result = tahmin_yap(int(text[0]), int(text[1]), text[2], text[3])
+#     return str(result[0])
 def tahmin_soru():
     return "Satış tahmin oranını öğrenmek için aşağıdaki verileri sırasıyla girmeniz gerekmektedir:" \
            " sevkiyat tarihi, numerik id, şehir ismi ve müşteri ismi"
